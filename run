@@ -1,0 +1,1 @@
+pm2 start neurons/miner13.py --name chunk-13 --cron-restart="0 * * * *" -- --netuid 40 --wallet.name darkfox --wallet.hotkey chunk-13 --log_level debug "$@" --axon.port 9013
