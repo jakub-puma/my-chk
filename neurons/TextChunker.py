@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+
 from nltk.tokenize import sent_tokenize
 import numpy as np
 import nltk
