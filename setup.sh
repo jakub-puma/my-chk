@@ -46,17 +46,6 @@ if ! command -v pm2 &>/dev/null; then
     npm install -g pm2
 fi
 
-# git + dependencies
-
-# if not chunking_subnet directory or not already in it
-if [ ! -d "chunking_subnet"  ] || [ ! "$(pwd)" == "chunking_subnet" ]; then
-    git clone https://github.com/VectorChat/chunking_subnet 
-else
-    echo "chunking_subnet directory already exists. Skipping git clone."
-fi
-
-cd chunking_subnet
-
 python3 -m venv venv
 source venv/bin/activate
 
